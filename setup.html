@@ -1,0 +1,70 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+
+<!-- Roboto Google font -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+<title>PLAN App Accelerator</title>
+
+<script type="text/javascript">
+var menuOpen = false;
+function toggleNavMenu() {
+	document.getElementById("navMenu").style.display = (menuOpen ? "none" : "block");
+	if (!menuOpen) {
+		document.getElementById("menuToggle").className += "open";
+	} else {
+		document.getElementById("menuToggle").className = "";
+	}
+	menuOpen = !menuOpen;
+}
+</script>
+
+</head>
+<body>
+
+<div id="navbar">
+	<div id="navbar-elements">
+		<a href="index.html" id="navbar-logo"><img src="http://cloudsoftwarellc.com/site/images/logo.png" /></a>
+		<div id="navbar-links">
+			<a href="architecture.html"><span>Architecture</span></a>
+			<a class="active"><span>Setup</span></a>
+		</div>
+	</div>
+	<div id="navbar-compact">
+		<a href="index.html" id="navbar-logo"><img src="http://cloudsoftwarellc.com/site/images/logo.png" /></a>
+		<span onclick="toggleNavMenu();" id="menuToggle">&#9776;</span>
+		<div class="dropdown" id="navMenu">
+			<div class="item"><a href="architecture.html">Architecture</a></div>
+			<div class="item"><a href="setup.html">Setup</a></div>
+		</div>
+	</div>
+</div>
+
+<div id="header">
+	<div id="title"><span>PLAN App Accelerator</span></div>
+	<div id="buttons">
+		<a href="https://heroku.com/deploy?template=https://github.com/Cloud-Software-LLC/time-tracker" target="_blank"><img src="images/dth_light.png" class="install-button" /></a>
+	</div>
+</div>
+
+<div id="body">
+	<div class="block">
+		<span class="heading">Setup</span>
+		<div class="content">
+			<p>Detailed instructions coming soon!</p>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div id="info"><span>Copyright &copy; 2016 Cloud Software LLC, All rights reserved.</span></div>
+</div>
+
+</body>
+</html>
