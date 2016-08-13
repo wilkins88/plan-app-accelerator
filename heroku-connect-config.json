@@ -1,0 +1,94 @@
+{
+	"connection": {
+		"app_name": "",
+		"exported_at": "2016-08-10T14:09:59.892512+00:00",
+		"organization_id": ""
+	},
+	"version": 1,
+	"mappings": [ {
+		"object_name": "Account",
+		"config": {
+			"sf_polling_seconds": 600,
+			"fields": {
+				"Name": {},
+				"Id": {},
+				"IsDeleted": {},
+				"MasterRecord__PG_ID__c": {},
+				"SystemModstamp": {},
+				"Parent__PG_ID__c": {},
+				"ParentId": {},
+				"PG_ID__c": {},
+				"CreatedDate": {},
+				"MasterRecordId": {}
+			},
+			"sf_notify_enabled": true,
+			"sf_max_daily_api_calls": 30000,
+			"applied_at": "2016-07-14T21:17:12.319Z",
+			"access": "read_write",
+			"indexes": {
+				"MasterRecordId": {
+					"unique": false
+				},
+				"PG_ID__c": {
+					"unique": true
+				},
+				"ParentId": {
+					"unique": false
+				},
+				"SystemModstamp": {
+					"unique": false
+				},
+				"Id": {
+					"unique": true
+				}
+			}
+		}
+	}, {
+		"object_name": "Contact",
+		"config": {
+			"sf_polling_seconds": 3600,
+			"fields": {
+				"LastName": {},
+				"Account__PG_ID__c": {},
+				"ReportsToId": {},
+				"Id": {},
+				"PhotoUrl": {},
+				"Name": {},
+				"IsDeleted": {},
+				"MasterRecord__PG_ID__c": {},
+				"SystemModstamp": {},
+				"FirstName": {},
+				"AccountId": {},
+				"ReportsTo__PG_ID__c": {},
+				"PG_ID__c": {},
+				"CreatedDate": {},
+				"MasterRecordId": {},
+				"Email": {}
+			},
+			"sf_notify_enabled": true,
+			"sf_max_daily_api_calls": 30000,
+			"applied_at": "2016-07-25T20:05:40.115Z",
+			"access": "read_write",
+			"indexes": {
+				"ReportsToId": {
+					"unique": false
+				},
+				"Id": {
+					"unique": true
+				},
+				"SystemModstamp": {
+					"unique": false
+				},
+				"AccountId": {
+					"unique": false
+				},
+				"PG_ID__c": {
+					"unique": true
+				},
+				"MasterRecordId": {
+					"unique": false
+				}
+			}
+		}
+	} ]
+}
