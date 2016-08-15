@@ -8,7 +8,7 @@
 		"plan": "heroku-postgresql:hobby-dev"
 	}, {
 		"plan": "heroku-postgresql:hobby-dev",
-		"as": "HEROKUCONNECT_DB_URL"
+		"as": "HEROKUCONNECT_DB"
 	}, {
 		"plan": "herokuconnect:demo"
 	}, {
