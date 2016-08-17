@@ -134,7 +134,7 @@ img.responsive {
   left: 50%;
   transform: translateX(-50%);
   color: #FFF;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
   text-shadow: 1px 1px 1px #1C2C3D;
   text-align: center;
@@ -359,6 +359,7 @@ img.responsive {
     height: 39px;
   }
   #header #title {
+    font-size: 36px;
     top: 50%;
     transform: translate(-50%, -50%);
   }
@@ -383,6 +384,11 @@ img.responsive {
   }
   #body .block.features .feature:hover {
     background-color: #FFF;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  #header #title {
+    font-size: 36px;
   }
 }
 .clearfix:after {
